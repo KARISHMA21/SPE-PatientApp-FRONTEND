@@ -1,0 +1,47 @@
+.boxes{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    float: left;
+     width: 100%;
+}
+.box{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+ 
+     width: 100%;
+}
+.box-content{
+    margin-left:-2%;
+    width: 20%;
+}
+.box-tags{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* margin-top: 25px; */
+}
+.box-title-tag{
+    margin-left:55px ;
+}
+.tagged{
+    width:28%;
+}
+.box-content-tag{
+    margin-left: 25px;
+}
+.box-title{
+    width: 150px;
+    margin-left: 25px;
+}
+.box-title-1{
+    width:auto;
+    margin-right:20px ;
+}
+
+.box-content-1{
+    width: 16.5%;
+    margin-left: 22px;
+    margin-right: 22px;
+}
