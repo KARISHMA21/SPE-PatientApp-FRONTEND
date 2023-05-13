@@ -1,7 +1,11 @@
 FROM node:alpine
+ 
 WORKDIR /patientapp
-COPY ./package.json /patientapp
+
+COPY ./ /patientapp/
+
 RUN npm install --legacy-peer-deps
-COPY . /patientapp
-EXPOSE 3081
+
+COPY . /patientapp/
+
 CMD ["npm","start"]

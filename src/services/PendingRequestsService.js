@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PATIENT_API_BASE_URL = "http://localhost:8081/patient_end/api/v1/cms";
+const PATIENT_API_BASE_URL = process.env.REACT_APP_PATIENT_BASE_URL_TO_CMS;
 
 class PendingRequestsService {
     getPendingRequestId(pid,token) {
@@ -19,7 +19,6 @@ class PendingRequestsService {
             const config = {
                 headers: {'Authorization': `Bearer ${token}`}
             }
-
             return axios.post(PATIENT_API_BASE_URL + "/action-on-pending-request/" + pendingreqid,body, config);
         // }
     }

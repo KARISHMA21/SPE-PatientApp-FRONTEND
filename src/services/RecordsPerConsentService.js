@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CMS_API_BASE_URL = "http://localhost:8081/patient_end/api/v1/cms";
+const CMS_API_BASE_URL = process.env.REACT_APP_PATIENT_BASE_URL_TO_CMS;
 
 class RecordsPerConsentService {
     getPendingRequestIdDetails(pid, id, token) {
