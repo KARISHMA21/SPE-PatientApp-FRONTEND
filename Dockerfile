@@ -9,3 +9,4 @@ RUN npm install --legacy-peer-deps
 COPY . /patientapp/
 
 CMD ["npm","start"]
+
